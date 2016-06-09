@@ -18,7 +18,9 @@ class ModelUtils {
 	 */
 	public static function getDisqueTarif($disque){
 		//TODO 4.1
-		return null;
+		$tarifActuel -> hasManyToMany("id", "disque_utilisateur", "idDisque", "idTarif", "tarif", "id",array("alias"=>"tarif"));
+		return $tarifActuel ;
+
 	}
 
 	/**
